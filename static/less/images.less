@@ -1,0 +1,39 @@
+@import "mixins.less";
+
+div[class*="block-"] {
+  width: 100%;
+  margin: 2em 0;
+  .border-radius();
+}
+
+div[class*="img-"] {
+  .background-size(cover);
+}
+
+.block-1 {
+  height: 25em;
+}
+
+.block-2 {
+  height: 40em;
+}
+
+.block-3 {
+  height: 55em;
+}
+
+.img-1 {
+  background: url("../images/2.jpg") center top no-repeat;
+}
+
+.img-2 {
+  background: url("../images/2.jpg") center top no-repeat;
+}
+
+.img-3 {
+  background: url("../images/3.jpg") center top no-repeat;
+}
+
+.img-4 {
+  background: url("../images/4.jpg") center top no-repeat;
+}
