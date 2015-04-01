@@ -17,25 +17,63 @@
 <body>
 
     <div class="our-way">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1900px" height="4200px">
-            <g fill="#e87" >
-                <circle id="first" cx="100" cy="250" r="30" ></circle>
-            </g>
-
-            <!--stroke-dasharray: 5000;-->
-            <path style="stroke-dasharray: 5000; stroke-dashoffset:0"
-                  d="M 100 250 q 500 600 150 600 q -350 30 250 300 q 50 30 -100 50 q -200 50 100 500 q 300 500 -200 500 q -300 10 400 400"
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1900px" height="6200px">
+            <path style="stroke-dasharray: 7000;stroke-dashoffset:0"
+                  d="M 100 250 q 500 600 150 600 q -350 30 250 300 q 50 30 -100 50 q -200 50 100 500 q 300 500 -200 500 q -300 10 400 400 q 300 160 -200 1000 q -300 700 200 800 q 150 50 -200 700 q -300 500 -100 500"
                   stroke="#e87"
                   stroke-width="5"
                   fill="none"
-                  data-0="stroke-dashoffset:5000;"
+                  data-0="stroke-dashoffset:7000;"
                   data-end="stroke-dashoffset:0;">
             </path>
+
+            <circle id="first" cx="100" cy="250" r="30" fill="#e87"></circle>
+            <text class="niconne-font" x="50" y="255"  stroke="orangered" stroke-opacity=".5" style="font-size: 2em">18.03.2007</text>
         </svg>
     </div>
 
     <section class="header-section">
         <h1 class="niconne-font">Privetik</h1>
+    </section>
+
+    <section class="photos-section">
+        <div class="container">
+            <div class="photo-wrapper clearfix">
+
+                <div class="column">
+                    <div class="img-1 block-1" data-sr="enter top over 3s after 0.5s"></div>
+                    <div class="img-2 block-2" data-sr="enter right after 0.5s"></div>
+                    <div class="img-2 block-3" data-sr="enter right after 0.5s"></div>
+                </div>
+                <div class="column">
+                    <div class="img-2 block-3" data-sr="enter right after 0.5s"></div>
+                    <div class="img-2 block-2" data-sr="enter right after 0.5s"></div>
+                    <div class="img-1 block-1" data-sr="enter top over 3s after 0.5s"></div>
+                </div>
+                <div class="column">
+                    <div class="img-3 block-1" data-sr="enter bottom over 1s and move 300px after 0.3s"></div>
+                    <div class="img-2 block-3" data-sr="enter right after 0.5s"></div>
+                    <div class="img-3 block-2" data-sr="enter bottom over 1s and move 300px after 0.3s"></div>
+                </div>
+                <div class="column">
+                    <div class="img-4 block-2" data-sr="enter top over 0.5s and move 200px"></div>
+                    <div class="img-2 block-1" data-sr="enter right after 0.5s"></div>
+                    <div class="img-4 block-3" data-sr="enter top over 0.5s and move 200px"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="full-screen-message-section" data-sr="enter top over 3s after 0.5s">
+        <div class="container">
+            <div class="row">
+                I would like to remind you lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
     </section>
 
     <section class="photos-section">
