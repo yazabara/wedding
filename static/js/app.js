@@ -4,7 +4,7 @@ require.config({
         less: '//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min',
         bootstrap: '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min',
         underscore: '../vendor/underscore-min',
-
+        domReady: '../vendor/domReady',
         skrollr: '../vendor/skrollr.min',
         scrollReveal: '../vendor/scrollReveal.min'
     },
@@ -24,7 +24,7 @@ require.config({
     }
 });
 
-define('app', ['jquery', 'scrollReveal', 'less', 'skrollr'], function ($, scrollReveal, less, skrollr) {
+define('app', ['jquery', 'scrollReveal', 'less', 'skrollr', 'domReady'], function ($, scrollReveal, less, skrollr, domReady) {
 
     var config = {
         reset:  true
@@ -35,6 +35,10 @@ define('app', ['jquery', 'scrollReveal', 'less', 'skrollr'], function ($, scroll
 
     skrollr.init({
         forceHeight: false
+    });
+
+    domReady(function () {
+        alert("dom ready");
     });
 
 });
