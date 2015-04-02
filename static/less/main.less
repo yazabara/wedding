@@ -1,7 +1,47 @@
 @import "variables";
+@import "mixins.less";
 
 html, body {
   height: 100%;
+}
+
+.photos-section {
+  padding: 2em 0;
+}
+
+#first-section {
+  text-align: center;
+  background-image: linear-gradient(
+          to right,
+          #6AAD92,
+          #81D1A2,
+          #1AB4CA,
+          #2C9097
+  );
+
+  h1 {
+    font-size: 10em;
+  }
+}
+
+#second-section {
+  background-image: linear-gradient(
+          to right,
+          #98288C,
+          #D14443,
+          #9E6941,
+          #2FA79F
+  );
+}
+
+#third-section {
+  background-image: linear-gradient(
+          to right,
+          #6360D2,
+          #7F56A7,
+          #24CC8D,
+          #B382EA
+  );
 }
 
 .niconne-font {
@@ -16,15 +56,8 @@ html, body {
   .column {
     width: 22.5%;
     height: 100%;
-    margin: 0 1%;
+    margin: -4px 1%;
     display: inline-block;
-  }
-}
-
-.header-section {
-  text-align: center;
-  h1 {
-    font-size: 10em;
   }
 }
 
@@ -38,7 +71,7 @@ html, body {
   background-color: @backgroundMessage;
   color: @colorMessage;
   padding: 2em 0;
-  margin: 2em 0;
+  .text-shadow(@textShadow);
 }
 
 .our-way {

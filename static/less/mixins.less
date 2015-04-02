@@ -5,6 +5,16 @@
   border-radius: @radius;
 }
 
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+
+
 .animation(...){
   -webkit-animation: @arguments;
   -moz-animation: @arguments;

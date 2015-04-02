@@ -1,9 +1,11 @@
+@import "variables.less";
 @import "mixins.less";
 
 div[class*="block-"] {
   width: 100%;
   margin: 2em 0;
   .border-radius();
+  .box-shadow(@imageShadow);
 }
 
 div[class*="img-"] {
