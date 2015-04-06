@@ -2,8 +2,6 @@ require.config({
     paths: {
         jquery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min',
         less: '//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min',
-        bootstrap: '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min',
-        underscore: '../vendor/underscore-min',
         skrollr: '../vendor/skrollr.min',
         scrollReveal: '../vendor/scrollReveal.min'
     },
@@ -23,7 +21,7 @@ require.config({
     }
 });
 
-define('app', ['jquery', 'scrollReveal', 'less', 'skrollr'], function ($, scrollReveal, less, skrollr) {
+define('app', ['jquery', 'scrollReveal','skrollr'], function ($, scrollReveal, skrollr) {
 
     window.sr = new scrollReveal({
         reset: true
