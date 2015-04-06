@@ -25,33 +25,20 @@ require.config({
     }
 });
 
-define('app', ['jquery', 'scrollReveal', 'less', 'skrollr', 'domReady', 'imagesLoaded'], function ($, scrollReveal, less, skrollr, domReady, imagesLoaded) {
+define('app', ['jquery', 'scrollReveal', 'less', 'skrollr'], function ($, scrollReveal, less, skrollr) {
 
-    var config = {
+    window.sr = new scrollReveal({
         reset: true
-    };
-
-    window.sr = new scrollReveal(config);
+    });
 
     skrollr.init({
         forceHeight: false
     });
 
-    var imgLoad = imagesLoaded( $('img') );
-
-    imgLoad.on( 'done', function( instance ) {
+    //in real life need use onload
+    setTimeout(function() {
         $(".loading").hide();
         $('#body').removeClass("without-scroll");
-        console.log('DONE  - all images have been successfully loaded');
-    });
-
-    //imagesLoaded($('img'), function (instance) {
-    //    $(".loading").hide();
-    //    $('#body').removeClass("without-scroll");
-    //});
-
-    domReady(function () {
-        console.log("dom ready");
-    });
+    }, 2000)
 
 });
