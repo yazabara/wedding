@@ -37,10 +37,18 @@ define('app', ['jquery', 'scrollReveal', 'less', 'skrollr', 'domReady', 'imagesL
         forceHeight: false
     });
 
-    imagesLoaded($('#body'), function (instance) {
+    var imgLoad = imagesLoaded( $('img') );
+
+    imgLoad.on( 'done', function( instance ) {
         $(".loading").hide();
         $('#body').removeClass("without-scroll");
+        console.log('DONE  - all images have been successfully loaded');
     });
+
+    //imagesLoaded($('img'), function (instance) {
+    //    $(".loading").hide();
+    //    $('#body').removeClass("without-scroll");
+    //});
 
     domReady(function () {
         console.log("dom ready");
