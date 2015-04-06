@@ -1,6 +1,19 @@
 @import "variables.less";
 @import "mixins.less";
 
+.photo-wrapper {
+  position: relative;
+  height: 180%;
+  overflow: hidden;
+
+  .column {
+    width: 22.5%;
+    height: 100%;
+    margin: -4px 1%;
+    display: inline-block;
+  }
+}
+
 div[class*="block-"] {
   width: 100%;
   margin: 2em 0;
