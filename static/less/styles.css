@@ -1,17 +1,16 @@
 .photo-wrapper {
   position: relative;
-  height: 180%;
+  height: 130rem;
   overflow: hidden;
 }
 .photo-wrapper .column {
   width: 22.5%;
   height: 100%;
-  margin: -4px 1%;
   display: inline-block;
 }
 div[class*="block-"] {
   width: 100%;
-  margin: 2em 0;
+  margin: 2rem 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -27,13 +26,13 @@ div[class*="img-"] {
   background-size: cover;
 }
 .block-1 {
-  height: 25em;
+  height: 25rem;
 }
 .block-2 {
-  height: 40em;
+  height: 40rem;
 }
 .block-3 {
-  height: 55em;
+  height: 55rem;
 }
 .img-1 {
   background: url("../images/1.jpg") center top no-repeat;
@@ -148,14 +147,14 @@ body {
   height: 100%;
 }
 .photos-section {
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 #first-section {
   text-align: center;
   background-image: linear-gradient(to right, #6aad92, #81d1a2, #1ab4ca, #2c9097);
 }
 #first-section h1 {
-  font-size: 10em;
+  font-size: 10rem;
 }
 #second-section {
   background-image: linear-gradient(to right, #98288c, #d14443, #9e6941, #2fa79f);
@@ -168,19 +167,19 @@ body {
 }
 .do-you-married-me-message {
   text-align: center;
-  font-size: 10em;
-  padding: 2.5em 1em;
+  font-size: 10rem;
+  padding: 41.5rem 1rem;
 }
 .full-screen-message-section {
   background-color: #313f7c;
   color: white;
-  padding: 2em 0;
+  padding: 2rem 0;
   text-shadow: 3px 3px 6px #969696;
 }
 .our-way {
   position: absolute;
   width: 100%;
-  height: 6000px;
+  height: 4000px;
   overflow: hidden;
 }
 .without-scroll {
@@ -203,7 +202,7 @@ body {
   left: 45%;
   position: absolute;
   top: 43%;
-  font-size: 7em;
+  font-size: 7rem;
 }
 @-webkit-keyframes heartbeat {
   0% {
@@ -343,8 +342,8 @@ body {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  width: 1em;
-  height: 1em;
+  width: 10rem;
+  height: 10rem;
   -webkit-transform: rotate(45deg) scale(1);
   -moz-transform: rotate(45deg) scale(1);
   -o-transform: rotate(45deg) scale(1);
@@ -361,32 +360,32 @@ body {
   background: #ee8877;
 }
 .heartbeat:before {
-  -webkit-border-bottom-left-radius: 0.33333333em;
-  -moz-border-bottom-left-radius: 0.33333333em;
-  -o-border-bottom-left-radius: 0.33333333em;
-  border-bottom-left-radius: 0.33333333em;
-  -webkit-border-top-left-radius: 0.33333333em;
-  -moz-border-top-left-radius: 0.33333333em;
-  -o-border-top-left-radius: 0.33333333em;
-  border-top-left-radius: 0.33333333em;
-  top: 0.33333333em;
+  -webkit-border-bottom-left-radius: 3.33333333rem;
+  -moz-border-bottom-left-radius: 3.33333333rem;
+  -o-border-bottom-left-radius: 3.33333333rem;
+  border-bottom-left-radius: 3.33333333rem;
+  -webkit-border-top-left-radius: 3.33333333rem;
+  -moz-border-top-left-radius: 3.33333333rem;
+  -o-border-top-left-radius: 3.33333333rem;
+  border-top-left-radius: 3.33333333rem;
+  top: 3.33333333rem;
   left: 0;
-  width: 1em;
-  height: 0.66666667em;
+  width: 10rem;
+  height: 6.66666667rem;
 }
 .heartbeat:after {
-  -webkit-border-top-right-radius: 0.33333333em;
-  -moz-border-top-right-radius: 0.33333333em;
-  -o-border-top-right-radius: 0.33333333em;
-  border-top-right-radius: 0.33333333em;
-  -webkit-border-top-left-radius: 0.33333333em;
-  -moz-border-top-left-radius: 0.33333333em;
-  -o-border-top-left-radius: 0.33333333em;
-  border-top-left-radius: 0.33333333em;
+  -webkit-border-top-right-radius: 3.33333333rem;
+  -moz-border-top-right-radius: 3.33333333rem;
+  -o-border-top-right-radius: 3.33333333rem;
+  border-top-right-radius: 3.33333333rem;
+  -webkit-border-top-left-radius: 3.33333333rem;
+  -moz-border-top-left-radius: 3.33333333rem;
+  -o-border-top-left-radius: 3.33333333rem;
+  border-top-left-radius: 3.33333333rem;
   top: 0;
-  left: 0.33333333em;
-  width: 0.66666667em;
-  height: 0.33333333em;
+  left: 3.33333333rem;
+  width: 6.66666667rem;
+  height: 3.33333333rem;
 }
 @media (min-width: 1500px) {
   .container {
@@ -397,19 +396,18 @@ body {
 @media (max-width: 650px) {
   .photo-wrapper {
     position: relative;
-    height: 780%;
+    height: 510rem;
   }
   .photo-wrapper .column {
     width: 100%;
     height: 25%;
-    margin: -4px 1%;
     display: block;
   }
   .do-you-married-me-message {
-    font-size: 5em;
-    padding: 4em 0em;
+    font-size: 5rem;
+    padding: 10rem 0rem;
   }
   #first-section h1 {
-    font-size: 5em;
+    font-size: 5rem;
   }
 }
