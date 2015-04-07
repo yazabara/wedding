@@ -1,7 +1,6 @@
 require.config({
     paths: {
         jquery: '../vendor/jquery.min',
-        skrollr: '../vendor/skrollr.min',
         waitForImages: '../vendor/jquery.waitforimages.min',
         bootstrap: '../vendor/bootstrap.min',
         scrollReveal: '../vendor/scrollReveal.min'
@@ -22,14 +21,10 @@ require.config({
     }
 });
 
-define('app', ['jquery', 'scrollReveal','skrollr', 'waitForImages', 'bootstrap'], function ($, scrollReveal, skrollr, waitForImages, bootstrap) {
+define('app', ['jquery', 'scrollReveal', 'waitForImages', 'bootstrap'], function ($, scrollReveal, waitForImages, bootstrap) {
 
     window.sr = new scrollReveal({
         reset: true
-    });
-
-    skrollr.init({
-        forceHeight: false
     });
 
     $.waitForImages.hasImgProperties = ['backgroundImage', 'background'];
