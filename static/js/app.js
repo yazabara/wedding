@@ -1,18 +1,19 @@
 require.config({
     paths: {
-        jquery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min',
-        less: '//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min',
+        jquery: '../vendor/jquery.min',
         skrollr: '../vendor/skrollr.min',
+        waitForImages: '../vendor/jquery.waitforimages.min',
+        bootstrap: '../vendor/bootstrap.min',
         scrollReveal: '../vendor/scrollReveal.min'
     },
     shim: {
-        underscore: {
-            exports: '_'
+        scrollReveal: {
+            deps: ['jquery']
+        },
+        waitForImages: {
+            deps: ['jquery']
         },
         bootstrap: {
-            deps: ['jquery', 'underscore']
-        },
-        scrollReveal: {
             deps: ['jquery']
         },
         jquery: {
@@ -21,7 +22,7 @@ require.config({
     }
 });
 
-define('app', ['jquery', 'scrollReveal','skrollr'], function ($, scrollReveal, skrollr) {
+define('app', ['jquery', 'scrollReveal','skrollr', 'waitForImages', 'bootstrap'], function ($, scrollReveal, skrollr, waitForImages, bootstrap) {
 
     window.sr = new scrollReveal({
         reset: true
@@ -31,10 +32,25 @@ define('app', ['jquery', 'scrollReveal','skrollr'], function ($, scrollReveal, s
         forceHeight: false
     });
 
-    //in real life need use onload
-    setTimeout(function() {
-        $(".loading").hide();
-        $('#body').removeClass("without-scroll");
-    }, 3000)
+    $.waitForImages.hasImgProperties = ['backgroundImage', 'background'];
+
+    var $images = $('div[class*="img-"]');
+    var loading = $('.loading');
+    var progressBar = loading.find('.progress .progress-bar');
+    var loaded = 0;
+
+    $('body').waitForImages({
+        finished: function() {
+             var percent = (loaded++)/$images.length * 100;
+             progressBar.css('width', percent+'%').attr('aria-valuenow', percent);
+             loading.hide();
+             $('body').removeClass("without-scroll");
+        },
+        each: function() {
+            var percent = (loaded++)/$images.length * 100;
+            progressBar.css('width', percent+'%').attr('aria-valuenow', percent);
+        },
+        waitForAll: true
+    });
 
 });
